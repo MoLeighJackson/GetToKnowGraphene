@@ -19,18 +19,18 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * adds point for correct answer
+     *
      * @param view
      */
 
-    public void addOnePoint (View view) {
+    public void addOnePoint(View view) {
 
-        if (score == 1)
-        {
+        if (score == 1) {
             Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
             return;
         }
-            score = score + 1;
-            displayScore(score);
+        score = score + 1;
+        displayScore(score);
         Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
 
     }
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays player's score
+     *
      * @param score
      */
     public void displayScore(int score) {
