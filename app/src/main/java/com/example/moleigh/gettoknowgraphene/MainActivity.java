@@ -35,6 +35,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void addPointCheckBox(View view) {
+
+        if (score == 3) {
+            Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        score = score + 1;
+        displayScore(score);
+        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+
+    }
+
+    public void addPointRadioBtn(View view) {
+
+        if (score == 4) {
+            Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        score = score + 1;
+        displayScore(score);
+        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+
+    }
+
     public void showToast(View view) {
         Toast.makeText(this, "Incorrect. Try Again.", Toast.LENGTH_SHORT).show();
     }

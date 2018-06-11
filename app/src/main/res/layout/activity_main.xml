@@ -62,7 +62,99 @@
             android:textSize="20sp" />
 
 
-        <!--QUESTION TWO CHECK BOXES
+        <!--QUESTION TWO CHECK BOXES-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question #2"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What are the names of the scientists who discovered graphene? Select two answers:"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Andrei Geim"
+            android:textSize="20sp"
+            android:onClick="addPointCheckBox"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grey Knotts"
+            android:textSize="20sp"
+            android:onClick="showToast"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kostya Noveselov"
+            android:textSize="20sp"
+            android:onClick="addPointCheckBox"/>
+
+        <CheckBox
+        android:id="@+id/checkbox_answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estelle Fanta Swara"
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+
+        <!--QUESTION THREE - RADIO BUTTON-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question #3"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graphene is produced from:"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graphite"
+            android:textSize="20sp"
+            android:onClick="addPointRadioBtn"/>
+
+        <RadioButton
+            android:id="@+id/radiobtn_a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garnet"
+            android:textSize="20sp"
+            android:onClick="showToast"/>
+
+        <RadioButton
+            android:id="@+id/radiobtn_a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gallium"
+            android:textSize="20sp"
+            android:onClick="showToast"/>
+
+            <RadioButton
+                android:id="@+id/radiobtn_a4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Graphinium"
+                android:textSize="20sp"
+                android:onClick="showToast"/>
+
+
+        <!--QUESTION FOUR RADIO BUTTON
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,81 +190,7 @@
             android:text="A one-atom-thick sheet of carbon atoms."
             android:textSize="20sp"
             android:onClick="addOnePoint" />
-
-        QUESTION THREE - RADIO BUTTON
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Question #2"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="What is graphene?"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/button_answer4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A toxic gas produced by carbon atoms."
-            android:textSize="20sp"
-            android:onClick="showToast"/>
-
-        <Button
-            android:id="@+id/button_answer5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A process through which metal can be softened."
-            android:textSize="20sp"
-            android:onClick="showToast"/>
-
-        <Button
-            android:id="@+id/button_answer6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A one-atom-thick sheet of carbon atoms."
-            android:textSize="20sp"
-            android:onClick="addOnePoint" />
-
-        QUESTION FOUR RADIO BUTTON
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Question #2"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="What is graphene?"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/button_answer4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A toxic gas produced by carbon atoms."
-            android:textSize="20sp"
-            android:onClick="showToast"/>
-
-        <Button
-            android:id="@+id/button_answer5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A process through which metal can be softened."
-            android:textSize="20sp"
-            android:onClick="showToast"/>
-
-        <Button
-            android:id="@+id/button_answer6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A one-atom-thick sheet of carbon atoms."
-            android:textSize="20sp"
-            android:onClick="addOnePoint" />
-    -->
+        -->
 
     </LinearLayout>
 </ScrollView>
