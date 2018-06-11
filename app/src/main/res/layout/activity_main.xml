@@ -14,7 +14,18 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
-<!--Question one-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Score" />
+
+    <TextView
+        android:id="@+id/player_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0" />
+
+    <!--QUESTION ONE : BUTTONS-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,21 +44,136 @@
         android:layout_height="wrap_content"
         android:text="A toxic gas produced by carbon atoms."
         android:textSize="20sp"
-        android:onClick="selectAnswer"/>
+        android:onClick="showToast"/>
 
     <Button
         android:id="@+id/button_answer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A process through which metal can be softened."
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:onClick="showToast"/>
 
     <Button
         android:id="@+id/button_answer3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A one-atom-thick sheet of carbon atoms."
+        android:textSize="20sp"
+        android:onClick="addOnePoint" />
+
+
+    <!--QUESTION TWO CHECK BOXES
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question #2"
         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is graphene?"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A toxic gas produced by carbon atoms."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A process through which metal can be softened."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A one-atom-thick sheet of carbon atoms."
+        android:textSize="20sp"
+        android:onClick="addOnePoint" />
+
+    QUESTION THREE - RADIO BUTTON
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question #2"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is graphene?"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A toxic gas produced by carbon atoms."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A process through which metal can be softened."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A one-atom-thick sheet of carbon atoms."
+        android:textSize="20sp"
+        android:onClick="addOnePoint" />
+
+    QUESTION FOUR RADIO BUTTON
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question #2"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is graphene?"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A toxic gas produced by carbon atoms."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A process through which metal can be softened."
+        android:textSize="20sp"
+        android:onClick="showToast"/>
+
+    <Button
+        android:id="@+id/button_answer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A one-atom-thick sheet of carbon atoms."
+        android:textSize="20sp"
+        android:onClick="addOnePoint" />
+-->
 
 </LinearLayout>
 </ScrollView>
