@@ -1,11 +1,13 @@
 package com.example.moleigh.gettoknowgraphene;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * adds point for correct answer
+     * adds point for correct answers
      *
      * @param view
      */
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     public void addPointEditText(View view) {
 
         EditText editTextAnswer = (EditText) findViewById(R.id.edit_text_answer);
-        answer = editTextAnswer.getText().toString();
+        answer = editTextAnswer.getText().toString().toLowerCase();
 
         if(answer.equals("scotch")) {
             displayScore(score + 1);
@@ -79,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * displays message when answer is incorrect
+     * @param view
+     */
 
     public void showToast(View view) {
         Toast.makeText(this, "Incorrect. Try Again.", Toast.LENGTH_SHORT).show();
@@ -93,6 +99,15 @@ public class MainActivity extends AppCompatActivity {
         if (checkbox4.isChecked()) {
             checkbox4.toggle();
         }
+
+        RadioButton radioAnswer2 = (RadioButton) findViewById(R.id.radiobtn_a2);
+        radioAnswer2.setChecked(false);
+
+        RadioButton radioAnswer3 = (RadioButton) findViewById(R.id.radiobtn_a3);
+        radioAnswer3.setChecked(false);
+
+        RadioButton radioAnswer4 = (RadioButton) findViewById(R.id.radiobtn_a4);
+        radioAnswer4.setChecked(false);
     }
 
     /**
@@ -111,9 +126,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *  has button_answer1 been clicked
-     if false add 1 point
-     if true do nothing
+     * TO DO: Add reset button
+     *        Add radio button logic to clear selections
      */
 
 }

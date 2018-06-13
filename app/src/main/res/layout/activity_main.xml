@@ -164,14 +164,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This kind of tape can be stuck to graphite in order to create graphene:"
+            android:text="This kind of tape can be stuck to graphite in order to create graphene: "
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edit_text_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="scotch, masking, electrical, or duct"
+            android:hint="Enter your answer here. Hint: scotch, masking, electrical, or duct"
             android:inputType="text"
             android:textSize="20sp"
             android:onClick="addPointEditText"/>
@@ -181,6 +181,13 @@
             android:layout_height="wrap_content"
             android:text="Source: http://www.pbs.org/wgbh/nova/next/tech/graphene/"
             android:textSize="10sp" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Final Score"
+        android:textSize="20sp"/>
+
 
         <TextView
             android:id="@+id/final_score"
