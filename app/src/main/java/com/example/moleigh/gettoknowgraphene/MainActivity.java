@@ -42,40 +42,49 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void addPointCheckBox(View view) {
+    public void addPointCheckBox1(View view) {
 
-        if (score == 3) {
-            Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
-            return;
+        if (score == 1) {
+            score = score + 1;
+            displayScore(score);
+            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
         }
-        score = score + 1;
-        displayScore(score);
-        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
 
+        CheckBox checkbox1 = (CheckBox) findViewById(R.id.checkbox_answer1);
+        checkbox1.setChecked(true);
+
+    }
+
+    public void addPointCheckBox2 (View view) {
+        if (score <= 2) {
+            score = score + 1;
+            displayScore(score);
+            Toast.makeText(this, "Correct! Move to the next question.", Toast.LENGTH_SHORT).show();
+        }
+
+        CheckBox checkbox3 = (CheckBox) findViewById(R.id.checkbox_answer3);
+        checkbox3.setChecked(true);
     }
 
     public void addPointRadioBtn(View view) {
 
-        if (score == 4) {
+        if (score <= 3) {
+            score = score + 1;
+            displayScore(score);
             Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
             return;
         }
-        score = score + 1;
-        displayScore(score);
-        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
-
     }
-
 
     public void addPointEditText(View view) {
 
         EditText editTextAnswer = (EditText) findViewById(R.id.edit_text_answer);
-        answer = editTextAnswer.getText().toString().toLowerCase();
+        answer = editTextAnswer.getText().toString();
 
-        if(answer.equals("scotch")) {
+        if(answer.equalsIgnoreCase("scotch")) {
+            Toast.makeText(this, "Correct! Hit submit for your final score.", Toast.LENGTH_SHORT).show();
             displayScore(score + 1);
-            finalScore(score + 1);
-            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            return;
         }else {
             Toast.makeText(this, "Incorrect. Try Again.", Toast.LENGTH_SHORT).show();
         }
@@ -113,21 +122,22 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays player's score
      *
-     * @param score
      */
+
     public void displayScore(int score) {
         TextView scoreView = (TextView) findViewById(R.id.player_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void finalScore(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.final_score);
-        scoreView.setText(String.valueOf(score));
+    public void finalScoreToast(View view) {
+
+        if (score <= 4) {
+            score = score + 1;
+            displayScore(score);
+            Toast.makeText(this, "Final Score: " + score, Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(this, "You're a graphene expert! Final Score: " + score, Toast.LENGTH_SHORT).show();
+        }
+
     }
-
-    /**
-     * TO DO: Add reset button
-     *        Add radio button logic to clear selections
-     */
-
 }

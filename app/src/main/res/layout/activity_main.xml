@@ -24,18 +24,22 @@
             android:layout_height="match_parent"
             android:text="0" />
 
-        <!--QUESTION ONE : BUTTONS-->
+        <!--QUESTION ONE BUTTONS-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question #1"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="What is graphene?"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button_answer1"
@@ -66,20 +70,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Question #2"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="What are the names of the scientists who discovered graphene? Select two answers:"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/checkbox_answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addPointCheckBox"
+            android:onClick="addPointCheckBox1"
             android:text="Andrei Geim"
             android:textSize="20sp" />
 
@@ -95,7 +103,7 @@
             android:id="@+id/checkbox_answer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="addPointCheckBox"
+            android:onClick="addPointCheckBox2"
             android:text="Kostya Noveselov"
             android:textSize="20sp" />
 
@@ -108,18 +116,22 @@
             android:textSize="20sp" />
 
 
-        <!--QUESTION THREE - RADIO BUTTON-->
+        <!--QUESTION THREE RADIO BUTTON-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Question #3"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="Graphene is produced from:"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radiobtn_a1"
@@ -159,42 +171,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Question #4"
-            android:textSize="20sp"/>
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
             android:text="This kind of tape can be stuck to graphite in order to create graphene: "
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edit_text_answer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="Enter your answer here. Hint: scotch, masking, electrical, or duct"
             android:inputType="text"
-            android:textSize="20sp"
-            android:onClick="addPointEditText"/>
+            android:onClick="addPointEditText"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/final_score_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="25dp"
+            android:onClick="finalScoreToast"
+            android:text="Submit" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Source: http://www.pbs.org/wgbh/nova/next/tech/graphene/"
+            android:layout_marginTop="25dp"
+            android:text="For more info about graphene visit: http://www.pbs.org/wgbh/nova/next/tech/graphene/"
             android:textSize="10sp" />
-
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Final Score"
-        android:textSize="20sp"/>
-
-
-        <TextView
-            android:id="@+id/final_score"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textSize="20sp"/>
 
     </LinearLayout>
 
