@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void addOnePoint(View view) {
 
-        if (score == 1) {
-            Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
-            return;
+        if (score == 0) {
+            score = score + 1;
+            displayScore(score);
+            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
         }
-        score = score + 1;
-        displayScore(score);
-        Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Correct. Move onto the next question.", Toast.LENGTH_SHORT).show();
+        return;
 
     }
 
@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(answer.equalsIgnoreCase("scotch")) {
             Toast.makeText(this, "Correct! Hit submit for your final score.", Toast.LENGTH_SHORT).show();
-            displayScore(score + 1);
+            score = score + 1;
+            displayScore(score);
             return;
         }else {
             Toast.makeText(this, "Incorrect. Try Again.", Toast.LENGTH_SHORT).show();
@@ -131,13 +132,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void finalScoreToast(View view) {
 
-        if (score <= 4) {
-            score = score + 1;
-            displayScore(score);
+        if (score <= 5) {
             Toast.makeText(this, "Final Score: " + score, Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, "You're a graphene expert! Final Score: " + score, Toast.LENGTH_SHORT).show();
+            return;
         }
-
     }
 }
