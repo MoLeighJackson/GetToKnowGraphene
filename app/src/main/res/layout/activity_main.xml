@@ -208,6 +208,43 @@
             android:text="For more info about graphene visit: http://www.pbs.org/wgbh/nova/next/tech/graphene/"
             android:textSize="10sp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Icon created on Canva.com from openclipart.org images:"
+            android:textSize="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short-Realistic-Pencil by metalmarious created 2009-01-26"
+            android:textSize="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://openclipart.org/detail/21270/short-realistic-pencil"
+            android:textSize="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Icon created on Canva.com from openclipart.org images:"
+            android:textSize="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Architetto -- scotch by francesco_rollandin created 2010-03-26"
+            android:textSize="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://openclipart.org/detail/34249/architetto-scotch"
+            android:textSize="5sp" />
+
+
     </LinearLayout>
 
 </ScrollView>
